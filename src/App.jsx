@@ -1,10 +1,12 @@
 import React from 'react'
+import Header from './components/Header'
 
 function App() {
   return (
-    <>
-    <div>React Practice</div>
-    </>
+    <div>
+     <Header username="Abhishek Singh"/>
+     <p>Props</p>
+    </div>
   )
 }
 
