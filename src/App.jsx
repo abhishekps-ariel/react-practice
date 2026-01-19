@@ -1,14 +1,12 @@
-import React from 'react'
+import Header from './components/Header'
+import CounterPage from './pages/CounterPage'
 
 function App() {
   return (
-    <>
-    <div>
-      <h1>FILIR</h1>
-      <p>Petition filing system</p>
+    <div className='h-screen flex flex-col'>
+      <Header />
+      <CounterPage />
     </div>
-    <div></div>
-    </>
   )
 }
 

@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+button{
+    background-color: cadetblue;
+    padding: 4px 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-weight: 600;
+}
+
+button:active{
+    background-color: darkcyan;
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
