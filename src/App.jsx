@@ -25,6 +25,11 @@ function App() {
     generatePassword();
   },[length,isCharAllowed],isCharAllowed)
 
+  function copyToClipboard(){
+    window.navigator.clipboard.writeText(password);
+    window.alert("password copied")
+  }
+
   return (
     <>
       <div className=" w-screen h-screen flex justify-center items-center bg-amber-300">
@@ -37,6 +42,7 @@ function App() {
               readOnly
               className="flex-1 px-3 py-2 outline-none bg-gray-500 rounded-l-xl font-bold"
             />
+             <button className="px-4 border-l-2 bg-blue-400  font-bold cursor-pointer active:bg-blue-500" onClick={copyToClipboard}>Copy</button>
             <button className="px-4 border-l-2 bg-green-400 rounded-r-xl font-bold cursor-pointer active:bg-green-500" onClick={generatePassword}>Generate</button>
           </div>
           <div className="flex gap-5 font-bold">
